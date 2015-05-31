@@ -1,0 +1,143 @@
+
+
+/*---------- Application stylesheets ----------*/
+
+body{
+	background: url(../img/background.jpg) repeat;
+	overflow: hidden;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+   user-select:none;
+}
+#bounceApp{
+	width: 100%;
+}
+#bounceApp:hover{
+	cursor: crosshair;
+}
+button#add{
+	width:70px;
+	height: 30px;
+	margin: 0 auto;
+	display: block;
+}
+.ball{
+  width:75px;height:75px; margin:0; padding:0;
+  line-height: 70px;
+  /*background:#9F0;*/
+  background: url(../img/tennisball.png) no-repeat center;
+  background-size: 100%;
+  -webkit-border-radius:50%;border-radius:50%;-ms-border-radius:50%;-moz-border-radius:50%;
+  cursor:pointer;
+  text-align: center;
+  position:absolute;
+  top:0px;
+  left: 0px;
+
+   /*-webkit-animation: colorChange 1s infinite;
+     -moz-animation: colorChange 1s infinite;
+     -ms-animation:  colorChange 1s infinite;
+     	 animation:  colorChange 1s infinite;*/
+}
+.ball > span{
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 50px;
+  color: red;
+}
+.ball:hover{
+	cursor: no-drop;
+}
+header {
+  width:99%;
+  margin: 0 auto;
+  height: 90px;
+  border: 3px dotted orange;
+  border-radius: 5px;
+  color:#fff;
+}
+header .title {
+  width: 76%;
+  float:left;
+}
+header .statusBar {
+  width: 20%;
+  float:right;
+  margin:10px 0 0 0;
+  padding-left:10px;
+  font: 15px 'Arial';
+  border-left: 5px groove orange;
+}
+header .statusBar p > span:nth-child(2){
+  color: orange;
+  margin-left: 5px;
+}
+header .statusBar p {
+  margin: 0;
+  padding: 0;
+}
+header h1, header h5 {
+  color: #fff;
+  text-align: center;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+header h5  {
+  color: cyan;
+  font-family: cursive;
+}
+
+div.gameRules {
+  width: 50%;
+  background: #fff;
+  cursor: default;
+  text-align: center;
+  margin: 50px auto 0;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset -1px 1px 56px 11px rgba(0,0,0,0.64);
+  -moz-box-shadow: inset -1px 1px 56px 11px rgba(0,0,0,0.64);
+  -ms-box-shadow: inset -1px 1px 56px 11px rgba(0,0,0,0.64);
+  box-shadow: inset -1px 1px 56px 11px rgba(0,0,0,0.64);
+}
+div.gameRules > h2 {
+  color: chocolate;
+  text-align: center;
+}
+div.gameRules > div {
+  font-size: 15px;
+  font-family: cursive;
+  margin: 15px;
+}
+div.gameRules > button {
+  border-radius: 5px;
+  background: darkturquoise;
+  padding: 5px 20px;
+  font-weight: 700;
+}
+/*---------- Animation Keyframes ----------*/
+@-webkit-keyframes colorChange {
+        0%   { background:red; }
+        10%   { background:blue; }
+        30%   { background:ghostwhite; }
+        50%  { background:green;}
+        100% { background:yellow; }
+}
+@-moz-keyframes colorChange {
+         0%   { background:red; }
+        10%   { background:blue; }
+        30%   { background:ghostwhite; }
+        50%  { background:green;}
+        100% { background:yellow; }
+}
+@-ms-keyframes colorChange {
+         0%   { background:red; }
+        10%   { background:blue; }
+        30%   { background:ghostwhite; }
+        50%  { background:green;}
+        100% { background:yellow; }
+}
+body{
+     
+}
