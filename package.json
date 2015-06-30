@@ -1,0 +1,11 @@
+{
+  "name": "All-About-Backbone",
+  "version": "0.0.0",
+  "description": "All about Backbone.js",
+  "repository": "",
+  "start": ["server.js"],
+  "author": "Venkat",
+  "dependencies": {
+    "express": "*"
+  }
+}
